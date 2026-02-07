@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Rose Day</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 60px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      animation: pop 1s ease;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      color: #e63946;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.2rem;
+    }
+
+    .rose {
+      font-size: 4rem;
+      margin: 20px 0;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .name {
+      margin-top: 25px;
+      font-size: 1.3rem;
+      color: #e63946;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="rose">🌹</div>
+    <h1>Happy Rose Day</h1>
+    <p>
+      A rose for love ❤️<br>
+      A rose for friendship 🤝<br>
+      A rose just for you 🌹
+    </p>
+
+    <div class="name">
+      — From Antish 💖
+    </div>
+  </div>
+
+</body>
+</html>
